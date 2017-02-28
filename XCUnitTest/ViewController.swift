@@ -20,6 +20,14 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    func isEven(num:Int) -> Bool {
+        if num%2 == 0 {
+            return true
+        }
+        else {
+            return false
+        }
+    }
 
 }
 

@@ -12,7 +12,7 @@
 		FD9AB4531E653CDA0042CE42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD9AB4511E653CDA0042CE42 /* Main.storyboard */; };
 		FD9AB4551E653CDA0042CE42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD9AB4541E653CDA0042CE42 /* Assets.xcassets */; };
 		FD9AB4581E653CDA0042CE42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD9AB4561E653CDA0042CE42 /* LaunchScreen.storyboard */; };
-		FD9AB4631E653CDA0042CE42 /* XCUnitTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9AB4621E653CDA0042CE42 /* XCUnitTestTests.swift */; };
+		FD9AB46E1E653DF50042CE42 /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9AB46D1E653DF50042CE42 /* ViewControllerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,8 +34,8 @@
 		FD9AB4571E653CDA0042CE42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FD9AB4591E653CDA0042CE42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD9AB45E1E653CDA0042CE42 /* XCUnitTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XCUnitTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FD9AB4621E653CDA0042CE42 /* XCUnitTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCUnitTestTests.swift; sourceTree = "<group>"; };
 		FD9AB4641E653CDA0042CE42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD9AB46D1E653DF50042CE42 /* ViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,8 +90,8 @@
 		FD9AB4611E653CDA0042CE42 /* XCUnitTestTests */ = {
 			isa = PBXGroup;
 			children = (
-				FD9AB4621E653CDA0042CE42 /* XCUnitTestTests.swift */,
 				FD9AB4641E653CDA0042CE42 /* Info.plist */,
+				FD9AB46D1E653DF50042CE42 /* ViewControllerTests.swift */,
 			);
 			path = XCUnitTestTests;
 			sourceTree = "<group>";
@@ -152,6 +152,7 @@
 					FD9AB45D1E653CDA0042CE42 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 2BULHRS882;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 						TestTargetID = FD9AB4491E653CDA0042CE42;
 					};
@@ -210,7 +211,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD9AB4631E653CDA0042CE42 /* XCUnitTestTests.swift in Sources */,
+				FD9AB46E1E653DF50042CE42 /* ViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,11 +367,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 2BULHRS882;
 				INFOPLIST_FILE = XCUnitTestTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.basil.XCUnitTestTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XCUnitTest.app/XCUnitTest";
 			};
@@ -381,6 +384,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 2BULHRS882;
 				INFOPLIST_FILE = XCUnitTestTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
